@@ -1,2 +1,35 @@
 # MERN-Boilerplate
-MERN stack boilerplate 
+boilerplate used to build apps with the MERN stack architecture.   
+## Installation  
+Use the npm package manager to install dependencies.
+```bash
+git clone https://github.com/AlexanderGonzo/MERN-Boilerplate.git
+cd MERN-Boilerplate
+npm i  #install backend dependencies
+cd client #cd into frontend 
+npm i   #install frontend dependencies
+cd .. #return to root directory
+```  
+## Add configs  
+In order to configure this boilerplate you must add two `.json` config files in the `config` directory, save them as `default.json` and `production.json`  
+The config files should contain the following:  
+```bash
+{
+  "mongoURI": "yourmongodburi",
+  "jwtSecret": "mysecrettoken"
+}
+```  
+## Usage  
+In the root directory run this command:  
+```bash
+npm run dev
+```
+## Heroku Deployment
+
+In the project root directory, run this command:
+
+```bash
+heroku create #Create your app on Heroku
+git push heroku master #Deploy your app to Heroku
+
+```  
